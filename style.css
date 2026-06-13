@@ -1,0 +1,53 @@
+/* Custom Chat Bubble Styles */
+.message {
+    line-height: 1.6;
+    font-size: 0.95rem;
+    animation: fadeIn 0.4s ease-out forwards;
+}
+
+.user-msg {
+    background-color: #f0edea;
+    padding: 1rem 1.5rem;
+    border-radius: 24px 24px 4px 24px;
+    align-self: flex-end;
+    max-width: 85%;
+}
+
+.ai-msg {
+    align-self: flex-start;
+    width: 100%;
+}
+
+/* AI Markdown Formatting Rules */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    font-size: 0.9rem;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 0 1px #e6e2dd;
+}
+
+th, td {
+    border: 1px solid #e6e2dd;
+    padding: 1rem;
+    text-align: left;
+}
+
+th {
+    background-color: #f0edea;
+    font-weight: 600;
+}
+
+ul, ol { margin-left: 1.5rem; margin-bottom: 1rem; }
+li { margin-bottom: 0.5rem; }
+p { margin-bottom: 1rem; }
+p:last-child { margin-bottom: 0; }
+strong { font-weight: 600; color: #000; }
+code { background: #f0edea; padding: 0.2rem 0.4rem; border-radius: 6px; font-size: 0.85em; }
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+}

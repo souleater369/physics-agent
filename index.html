@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Deep Orchestrator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[#fcfbf9] text-[#2c2a29] h-screen flex justify-center p-4 md:p-8 font-sans">
+    
+    <div class="max-w-3xl w-full flex flex-col h-full gap-4">
+        
+        <header>
+            <h1 class="text-3xl tracking-tight text-[#2c2a29] mb-1">The Deep Orchestrator</h1>
+            <p class="text-[#8b8682] text-sm">Live streaming web grounding active.</p>
+        </header>
+        
+        <main id="chat-feed" class="flex-grow overflow-y-auto p-5 md:p-8 bg-white border border-[#e6e2dd] rounded-3xl flex flex-col gap-6 shadow-sm">
+            <div class="ai-msg">
+                <span class="text-[#8b8682]">System initialized. What are we investigating today?</span>
+            </div>
+        </main>
+        
+        <footer class="flex gap-3">
+            <input type="text" id="queryInput" class="flex-grow p-4 px-6 border border-[#e6e2dd] rounded-full text-base outline-none focus:border-[#8b8682] transition-colors shadow-sm" placeholder="Enter deep research instructions...">
+            <button id="sendBtn" class="bg-[#2c2a29] text-white px-8 rounded-full hover:bg-black transition-transform active:scale-95 shadow-sm font-medium">Send</button>
+        </footer>
+        
+        <div class="text-center text-xs text-[#8b8682] mt-2">built by Arna</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
